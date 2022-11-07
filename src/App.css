@@ -4,6 +4,22 @@
 
 .divider-1 {
   /* position: absolute; */
+  /* background-image: url("../src/images/vegetables.avif"); */
+  height: 40rem;
+}
+
+.divider-img {
+  object-fit: contain;
+  width: 40rem;
+  height: 40rem;
+}
+
+.divider-2 {
+}
+
+.divider-2 {
+  /* background-image: url("../src/images/pig.avif"); */
+  height: 40rem;
 }
 
 .divider-1-inner {
