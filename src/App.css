@@ -2,29 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-.divider-1 {
-  /* position: absolute; */
-  /* background-image: url("../src/images/vegetables.avif"); */
-  /* height: 40rem; */
-}
-
 .divider-img {
   object-fit: contain;
   width: 40rem;
   height: 40rem;
 }
 
-.divider-2 {
-}
-
-.divider-2 {
-  /* background-image: url("../src/images/pig.avif"); */
-  /* height: 40rem; */
-}
-
 .divider-1-inner {
-  /* position: auto; */
   object-fit: contain;
   width: 50%;
   height: 50%;
+}
+
+.logo {
+  position: relative;
+  height: auto;
+  width: auto;
+}
+.logo img {
+  position: relative;
+  height: auto;
+  width: auto;
+  max-height: 5rem;
+  max-width: 25rem;
+  /* max-height: 72px;
+  max-width: 250px; */
 }

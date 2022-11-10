@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../images/logo-transparent.png";
 
 const Hero = () => {
   return (
@@ -11,9 +12,8 @@ const Hero = () => {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">
-            Affordable Quality Groceries
-          </h1>
+          <img src={Logo} alt="" />
+          <h1 className="mb-5 text-5xl font-bold">Fresh Quality Ingredients</h1>
           <p className="mb-5">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et

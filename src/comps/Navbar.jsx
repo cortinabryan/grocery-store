@@ -1,10 +1,14 @@
 import React from "react";
+import Logo from "../images/logo-transparent.png";
 
 const Navbar = () => {
   return (
     <div className="navbar bg-base-300">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">Whatever Shop</a>
+        {/* <a className="btn btn-ghost normal-case text-xl">Whatever Shop</a> */}
+        <a className="logo btn btn-ghost normal-case text-xl">
+          <img src={Logo} alt="" />
+        </a>
       </div>
       <div className="flex-none gap-2">
         <div className="form-control">
