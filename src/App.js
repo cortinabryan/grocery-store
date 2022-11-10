@@ -1,8 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./comps/Navbar";
 import Divider from "./comps/Divider";
 import Hero from "./comps/Hero";
+import Categories from "./comps/Categories.jsx";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <Divider />
+      <Categories />
     </div>
   );
 }
