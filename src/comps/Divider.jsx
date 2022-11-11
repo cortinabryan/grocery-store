@@ -7,7 +7,7 @@ import HeroRight from "./HeroRight";
 
 const Divider = () => {
   return (
-    <div className="flex w-full">
+    <div className="flex w-full mt-5">
       <div className="divider-1 grid h-96 flex-grow card bg-base-300 rounded-box place-items-center my-4 mx-4">
         <HeroLeft />
       </div>
