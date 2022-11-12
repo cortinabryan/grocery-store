@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductsCard = () => {
   return (
-    <div className="products-card card w-96 bg-base-100 shadow-xl justify-self-center my-20">
+    <div className="products-card card w-96 bg-base-100 shadow-xl justify-self-center my-5">
       <figure>
         <img src="https://placeimg.com/400/225/arch" alt="Mangoes" />
       </figure>

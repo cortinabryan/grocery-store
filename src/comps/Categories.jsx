@@ -4,7 +4,7 @@ import Card from "./Card";
 const Categories = () => {
   return (
     <div className="Categories mt-5">
-      <h2 className="mb-5 text-5xl font-bold text-center text-primary">
+      <h2 className="my-10 text-5xl font-bold text-center text-primary">
         Categories
       </h2>
       {/* <div className="Cards flex flex-row"> */}
