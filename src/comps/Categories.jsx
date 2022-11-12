@@ -7,7 +7,8 @@ const Categories = () => {
       <h2 className="mb-5 text-5xl font-bold text-center text-primary">
         Categories
       </h2>
-      <div className="Cards flex flex-row">
+      {/* <div className="Cards flex flex-row"> */}
+      <div className="Cards grid grid-cols-6 ml-12">
         <Card />
         <Card />
         <Card />

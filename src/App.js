@@ -4,6 +4,7 @@ import Divider from "./comps/Divider";
 import Hero from "./comps/Hero";
 import Categories from "./comps/Categories.jsx";
 import Products from "./comps/Products.jsx";
+import Deal from "./comps/Deal.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Divider />
       <Categories />
       <Products />
+      <Deal />
     </div>
   );
 }
