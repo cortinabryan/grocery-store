@@ -19,6 +19,7 @@
   height: auto;
   width: auto;
 }
+
 .logo img {
   position: relative;
   height: auto;
@@ -27,4 +28,16 @@
   max-width: 25rem;
   /* max-height: 72px;
   max-width: 250px; */
+}
+
+.products {
+}
+
+.products-inner {
+  /* display: grid;
+  justify-content: center;
+  align-content: center; */
+}
+
+.products-card {
 }
