@@ -14,7 +14,7 @@ const Email = () => {
         //   backgroundImage: `url("https://images.unsplash.com/photo-1607863680151-1da3e60691bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80	")`,
         // }}
       >
-        <MdMailOutline size={50} className="text-white mt-5" />
+        <MdMailOutline size={50} className="mt-5" />
         <h2 className="text-3xl font-bold text-white">
           Sign up to our Email List to get more Deals!
         </h2>

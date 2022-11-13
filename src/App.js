@@ -6,6 +6,7 @@ import Categories from "./comps/Categories.jsx";
 import Products from "./comps/Products.jsx";
 import Deal from "./comps/Deal.jsx";
 import Email from "./comps/Email.jsx";
+import Footer from "./comps/Footer.jsx";
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
       <Products />
       <Deal />
       <Email />
+      <Footer />
     </div>
   );
 }
