@@ -12,7 +12,9 @@ const HeroRight = () => {
             Joe'Rogan approved grass-fed non-gmo organic farm-raised cage-free
             elk-meat
           </p>
-          <button className="btn btn-primary">I want somma that</button>
+          <button className="btn bg-green-800 hover:btn-primary">
+            I want somma that
+          </button>
         </div>
       </div>
     </div>

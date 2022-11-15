@@ -12,7 +12,9 @@ const HeroLeft = () => {
             Handpicked ingredients from Wakanda, Shipped by Santa's reindeers
             and masterplanned by Jeff Bae-zeus{" "}
           </p>
-          <button className="btn btn-primary">Need my greens bruh</button>
+          <button className="btn bg-green-800 hover:btn-primary">
+            Need my greens bruh
+          </button>
         </div>
       </div>
     </div>

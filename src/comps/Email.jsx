@@ -30,7 +30,9 @@ const Email = () => {
               placeholder="Email"
               className="input input-bordered"
             />
-            <button className="btn btn-primary mb-5">Sign Up</button>
+            <button className="btn bg-green-800 hover:btn-primary mb-5">
+              Sign Up
+            </button>
           </label>
         </div>
       </div>

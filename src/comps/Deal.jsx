@@ -18,7 +18,7 @@ const Deal = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn btn-primary">Claim</button>
+          <button className="btn bg-green-800 hover:btn-primary">Claim</button>
         </div>
       </div>
     </div>

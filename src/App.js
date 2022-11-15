@@ -7,14 +7,16 @@ import Products from "./comps/Products.jsx";
 import Deal from "./comps/Deal.jsx";
 import Email from "./comps/Email.jsx";
 import Footer from "./comps/Footer.jsx";
+import Data from "./Data.jsx";
 function App() {
+  const { products } = Data;
   return (
     <div className="App">
       <Navbar />
       <Hero />
       <Divider />
       <Categories />
-      <Products />
+      <Products products={products} />
       <Deal />
       <Email />
       <Footer />

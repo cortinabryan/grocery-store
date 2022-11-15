@@ -10,7 +10,9 @@ const Card = () => {
         <h2 className="card-title">Produce</h2>
         <p>Up to 20% Off!</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">See More</button>
+          <button className="btn bg-green-800 hover:btn-primary">
+            See More
+          </button>
         </div>
       </div>
     </div>
