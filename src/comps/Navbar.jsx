@@ -48,12 +48,12 @@ const Navbar = (props) => {
               <div>{cartItems.length === 0 && <div> Cart is empty </div>}</div>
               {cartItems.map((item) => (
                 <div key={item.id} className="row">
-                  <div className='text-lg col-2'>{item.name}</div>
+                  <div className='text-lg col-2 italic'>{item.name}</div>
                     <div className="col-2">
-                      <button onClick={() => onAdd(item)} className="btn btn-sm bg-red-800 mr-1 add">+</button>
-                      <button onClick={() => onRemove(item)} className="btn btn-sm bg-yellow-600 ml-1 remove">-</button>
+                      <button onClick={() => onAdd(item)} className="text-lg btn btn-sm bg-emerald-700 mt-2 mr-1 add">+</button>
+                      <button onClick={() => onRemove(item)} className="text-lg btn btn-sm bg-red-700 mt-2 ml-1 remove">-</button>
                     </div>
-                    <div className="col-2 text-right">{item.qty} x ${item.price.toFixed(2)}</div>
+                    <div className="col-2 text-right text-lg">{item.qty} x ${item.price.toFixed(2)}</div>
                 </div>
               ))}
               <span className="font-bold text-lg">0 Items</span>
