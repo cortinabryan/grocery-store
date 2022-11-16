@@ -2,7 +2,7 @@ import React from "react";
 import ProductsCard from "./ProductsCard";
 
 const Products = (props) => {
-  const { products } = props;
+  const { products,onAdd } = props;
   console.log(products);
   return (
     <div className="products mt-20">
@@ -11,7 +11,7 @@ const Products = (props) => {
       </h2>
       <div className="products-inner grid grid-cols-4 bg-base-200 pb-10">
         {products.map((product) => (
-          <ProductsCard key={product.id} product={product} />
+          <ProductsCard key={product.id} product={product} onAdd={onAdd}/>
         ))}
       </div>
     </div>

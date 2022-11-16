@@ -1,7 +1,8 @@
 import React from "react";
 import Logo from "../images/logo-transparent.png";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const {cartItems, onAdd, onRemove} = props;
   return (
     <div className="navbar bg-base-300">
       <div className="flex-1">
@@ -43,8 +44,20 @@ const Navbar = () => {
             className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
           >
             <div className="card-body">
-              <span className="font-bold text-lg">8 Items</span>
-              <span className="text-info">Subtotal: $999</span>
+              <h2 className="font-bold text-xl">Cart Items</h2>
+              <div>{cartItems.length === 0 && <div> Cart is empty </div>}</div>
+              {cartItems.map((item) => (
+                <div key={item.id} className="row">
+                  <div className='text-lg col-2'>{item.name}</div>
+                    <div className="col-2">
+                      <button onClick={() => onAdd(item)} className="btn btn-sm bg-red-800 mr-1 add">+</button>
+                      <button onClick={() => onRemove(item)} className="btn btn-sm bg-yellow-600 ml-1 remove">-</button>
+                    </div>
+                    <div className="col-2 text-right">{item.qty} x ${item.price.toFixed(2)}</div>
+                </div>
+              ))}
+              <span className="font-bold text-lg">0 Items</span>
+              <span className="text-info">Subtotal: $0</span>
               <div className="card-actions">
                 <button className="btn btn-primary btn-block">View cart</button>
               </div>
