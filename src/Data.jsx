@@ -22,8 +22,59 @@ import Frozenfruit from "./images/frozenfruit.jpg";
 import Mixedveggies from "./images/mixedvegitables.jpg";
 import Frozenpizza from "./images/frozenpizza.jpg";
 import Icecream from "./images/cookiesandcream.jpg";
+import Fruits from "./images/fruits.png";
+import Vegetables from "./images/vegetables.png";
+import Dairy from "./images/dairy.png";
+import Meat from "./images/meat.png";
+import Seafood from "./images/seafood.png";
+import Frozen from "./images/frozen.png";
 
 const data = {
+  categories: [
+    {
+      id: "1",
+      name: "Fruits",
+      image: Fruits,
+      desc: "Fruits shipped from the native islands of Fresno California",
+      disc: "Up to 20% Off!",
+    },
+    {
+      id: "2",
+      name: "Vegetables",
+      image: Vegetables,
+      desc: "Locallly growned grass",
+      disc: "Up to 15% Off!",
+    },
+    {
+      id: "3",
+      name: "Dairy & Eggs",
+      image: Dairy,
+      desc: "Lactose Free & Gluten Free options available",
+      disc: "Up to 50% Off!",
+    },
+    {
+      id: "4",
+      name: "Meat",
+      image: Meat,
+      desc: "100% organic grass-fed farm-raised depression free chickens/cows/pigs",
+      disc: "Up to 40% Off!",
+    },
+    {
+      id: "5",
+      name: "Seafood",
+      image: Seafood,
+      desc: "Spongebob's friends and enemies",
+      disc: "Up to 30% Off!",
+    },
+    {
+      id: "6",
+      name: "Frozen",
+      image: Frozen,
+      desc: "Like elsa",
+      disc: "Up to 60% Off!",
+    },
+  ],
+
   products: [
     {
       id: "1",

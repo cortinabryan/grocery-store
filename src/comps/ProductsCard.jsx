@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductsCard = (props) => {
   const { product, onAdd } = props;
-  console.log(product);
+  // console.log(product);
   return (
     <div className="products-card card w-96 bg-base-100 shadow-xl justify-self-center my-5">
       <figure>
@@ -14,7 +14,10 @@ const ProductsCard = (props) => {
           <div className="badge badge-secondary">20% Off</div>
         </h3>
         <p>{product.desc}</p>
-        <button onClick={() => onAdd(product)} className="btn bg-green-800 hover:btn-primary">
+        <button
+          onClick={() => onAdd(product)}
+          className="btn bg-green-800 hover:btn-primary"
+        >
           Add to Cart
         </button>
         <div>${product.price}</div>

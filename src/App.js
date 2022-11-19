@@ -13,6 +13,7 @@ import { useState } from "react";
 
 function App() {
   const { products } = Data;
+  const { categories } = Data;
   const [cartItems, setCartItems] = useState([]);
   const onAdd = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
@@ -44,7 +45,7 @@ function App() {
       <Navbar onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
       <Hero />
       <Divider />
-      <Categories />
+      <Categories categories={categories} />
       <Products onAdd={onAdd} products={products} />
       <Deal />
       <Email />
