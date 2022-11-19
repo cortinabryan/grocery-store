@@ -2,11 +2,11 @@ import React from "react";
 import Logo from "../images/logo-transparent.png";
 
 const Navbar = (props) => {
-  const {cartItems, onAdd, onRemove} = props;
-  const itemsPrice = cartItems.reduce((a,c) => a + c.price * c.qty, 0);
+  const { cartItems, onAdd, onRemove } = props;
+  const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
   const taxPrice = itemsPrice * 0.14;
-  const shippingPrice = itemsPrice > 2000 ? 0 : 50;
-  const totalPrice = itemsPrice + taxPrice + shippingPrice; 
+  const shippingPrice = itemsPrice > 2000 ? 0 : 5;
+  const totalPrice = itemsPrice + taxPrice + shippingPrice;
 
   return (
     <div className="navbar bg-base-300">
@@ -53,37 +53,60 @@ const Navbar = (props) => {
               <div>{cartItems.length === 0 && <div> Cart is empty </div>}</div>
               {cartItems.map((item) => (
                 <div key={item.id} className="row">
-                  <div className='text-lg col-2 italic'>{item.name}</div>
-                    <div className="col-2">
-                      <button onClick={() => onAdd(item)} className="text-lg btn btn-sm bg-emerald-700 mt-2 mr-1 add">+</button>
-                      <button onClick={() => onRemove(item)} className="text-lg btn btn-sm bg-red-700 mt-2 ml-1 remove">-</button>
-                    </div>
-                    <div className="col-2 text-right text-lg">{item.qty} x ${item.price.toFixed(2)}</div>
+                  <div className="text-lg col-2 italic">{item.name}</div>
+                  <div className="col-2">
+                    <button
+                      onClick={() => onAdd(item)}
+                      className="text-lg btn btn-sm bg-emerald-700 mt-2 mr-1 add"
+                    >
+                      +
+                    </button>
+                    <button
+                      onClick={() => onRemove(item)}
+                      className="text-lg btn btn-sm bg-red-700 mt-2 ml-1 remove"
+                    >
+                      -
+                    </button>
+                  </div>
+                  <div className="col-2 text-right text-lg">
+                    {item.qty} x ${item.price.toFixed(2)}
+                  </div>
                 </div>
               ))}
               {cartItems.length !== 0 && (
                 <>
-                <hr></hr>
-                <div className="row">
-                  <div className="col-2">Items Price</div>
-                  <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
-                </div>
-                <div className="row">
-                  <div className="col-2">Tax Price</div>
-                  <div className="col-1 text-right">${taxPrice.toFixed(2)}</div>
-                </div>
-                <div className="row">
-                  <div className="col-2">Shipping Price</div>
-                  <div className="col-1 text-right">${shippingPrice.toFixed(2)}</div>
-                </div>
-                <div className="row">
-                  <div className="col-2"><strong>Total Price</strong></div>
-                  <div className="col-1 text-right"><strong>${totalPrice.toFixed(2)}</strong></div>
-                </div>
+                  <hr></hr>
+                  <span className="font-bold text-lg">0 Items</span>
+                  <div className="row">
+                    <div className="col-2">Items Price</div>
+                    <div className="col-1 text-right">
+                      ${itemsPrice.toFixed(2)}
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-2">Tax Price</div>
+                    <div className="col-1 text-right">
+                      ${taxPrice.toFixed(2)}
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-2">Shipping Price</div>
+                    <div className="col-1 text-right">
+                      ${shippingPrice.toFixed(2)}
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-2">
+                      <strong>Total Price</strong>
+                    </div>
+                    <div className="col-1 text-right">
+                      <strong>${totalPrice.toFixed(2)}</strong>
+                    </div>
+                  </div>
                 </>
               )}
-              <span className="font-bold text-lg">0 Items</span>
-              <span className="text-info">Subtotal: $0</span>
+              {/* <span className="font-bold text-lg">0 Items</span>
+              <span className="text-info">Subtotal: $0</span> */}
               <div className="card-actions">
                 <button className="btn btn-primary btn-block">View cart</button>
               </div>
